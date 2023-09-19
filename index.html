@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MTC</title>
+
+    <!-- Meta  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!-- Css -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/planning.css">
+    <link rel="stylesheet" href="Css/team_style.css">
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!-- boostrap + icons  -->
+
+    <!-- boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!-- script-php (axios)  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+        integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+
+</head>
+
+
+<body class="m-0 p-0 ">
+    <section class="showcase" id="home">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top bg-black p-2" id="mainNav">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="navbar-brand " href="#home">
+                        <img src="MTC_ISIMS_logo_2.png" alt="Logo_MTC">
+                    </div>
+
+                    <!-- Nav contain for toggler -->
+                    <div class="offcanvas offcanvas-end w-50 p-1 " tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.26);">
+
+                        <!-- Header toggler (title + button_close) -->
+                        <div class="offcanvas-header border-bottom border-light">
+                            <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MTC</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body text-center w-auto">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 text-center " id="navbarLinks">
+                                <li class="nav-item ">
+                                    <a class="nav-link active " href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#plant">Our Plant</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link px-3 " data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalToggle" id="join">Join</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Toggler -->
+                    <button class="navbar-toggler shadow-none border-0 navbar-dark" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </nav>
+        </header>
+
+        <video autoplay muted loop plays-inline>
+            <source src="animation n2.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <h4 id="md" class="h4">Microsoft Tech club</h4>
+            <h4 id="sm" class="h4">MTC</h4>
+        </div>
+    </section>
+
+
+    <!-- Modal 1  -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content bg-black">
+                <div class="modal-header border-0 ">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Welcome to
+                        MTC ISIMS </h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="Btn-close"><i
+                            class="fa-solid fa-xmark fa-lg"></i></button>
+                </div>
+                <div class="modal-body border-0 text-light">
+                    choose where you want to join with us
+                </div>
+                <div class="modal-footer border-0 ">
+                    <button type="button" class="btn_INs-modal" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle2">
+                        Member
+                    </button>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fforms.office.com%2FPages%2FResponsePage.aspx%3Fid%3DBPam-PFHWkysAQLqiWBYyXYmU9GL9thElvbKtjQtXkhUQU02VUFXVlhXWDNERFdPSzFJUDBDVkROVC4u%26fbclid%3DIwAR3qYY95aKHTTNtRAxtiV_-PsxZ76GY4Wbc6KuBjulMpu-3AREj-IfUKucE&h=AT0hjOVRUVj2NMv1-odh72rvGsyquX0uWYGrgNbgfmFTOnBiLTGguNB5AWgG8Up3K4rK7XlmU8xFGN7IIsi3d-HUSj9WgJtMwHfDz3l6zMjifVkntBTaRh9Iyh8QxdcdPysJBw"
+                        class="btn btn_INs-modal disabled text-light" aria-disabled="true">
+                        Committee
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 2  -->
+    <div class="modal fade " id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-black">
+                <div class="modal-header border_bottom_color">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Member
+                    </h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="Btn-close" id="close"
+                        onclick="resert()"><i class="fa-solid fa-xmark fa-lg"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation form-floating " novalidate>
+                        <div class="form-floating col-md-12">
+                            <input type="text" class="form-control" id="validationCustom01" required placeholder="Name">
+                            <label for="validationCustom01" class="form-label">Name</label>
+                            <div class="invalid-feedback text-start" id="validationDivName">
+                                Name required !!
+                            </div>
+                        </div>
+                        <div class="form-floating col-md-12">
+                            <input type="text" class="form-control" id="validationCustom02" required
+                                placeholder="Last Name">
+                            <label for="validationCustom02" class="form-label">Last
+                                Name</label>
+                            <div class="invalid-feedback text-start" id="validationDivLast-Name">
+                                Last Name required !!
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-floating">
+                            <input type="email" class="form-control" id="inputEmail4" required placeholder="Email">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <div class="invalid-feedback text-start" id="validationDivMail">
+                                Email required !!
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-floating">
+                            <input type="tel" class="form-control" id="inputTel" required placeholder="Tel">
+                            <label for="inputTel" class="form-label">Tel</label>
+                            <div class="invalid-feedback text-start" id="validationDivTel">
+                                Tel required !!
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <select class="form-select" required aria-label="select example" id="class">
+                                <option disabled selected>Filière</option>
+                                <option value="L">Licence</option>
+                                <option value="P">Preparatoire</option>
+                                <option value="I">Ingenieur</option>
+                                <option value="M">Master</option>
+                            </select>
+                        </div>
+
+                        <div class="modal-footer border_top_color">
+                            <button class="btn_INs-modal" id="submitButton">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 3  -->
+    <div class="modal fade " id="successModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-black">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel2"> thank you
+                        for joining us
+                    </h1>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="Btn-close"><i
+                            class="fa-solid fa-xmark fa-lg"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="position-relative">
+        <!-- About  -->
+        <section id="about" class="bg-black text-light">
+            <div class="container p-3 ">
+                <h2 class="h2 fs-1 text-center" style="color :#9B7EDA">About Us</h2>
+                <div class="row my-3 ">
+                    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <p class="fs-4 " style="transform: translate(5px,10px);">Lorem ipsum dolor sit amet
+                            consectetur,
+                            adipisicing elit. Qui iste
+                            perspiciatis, aliquid libero, earum deleniti provident nulla, laudantium corrupti
+                            corporis
+                            voluptate voluptates atque! Obcaecati, distinctio. Ullam reprehenderit esse alias
+                            sapiente?
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                        <img src="team.jpg" alt="team_MTC" id="img_team" class="rounded-3" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="team">
+            <h2 class="h2 fs-1  my-3 text-center" style="color :#9B7EDA;">Our Team</h2>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+
+        <!-- planning -->
+        <section id="plant" class="bg-black pt-3 pb-3">
+
+            <h2 class="h2 fs-1 text-center" style="color :#9B7EDA">Our Plants</h2>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <h2 class="h2 text-light text-center">Coming soon</h2>
+                        <div class="row ">
+                            <div class="col-md-11 scroll_bar " id="col-coming"
+                                style="height: 460px; overflow-x: hidden  ; overflow-y: scroll">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="h2 text-light text-center">Our work</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 scroll_bar" id="col-work"
+                                style="height: 460px; overflow-x: hidden  ; overflow-y: scroll">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="bg-black">
+            <div class="container p-3">
+                <h2 class="h2 fs-1 text-center mb-3" style="color :#9B7EDA">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-5 p-3 text-center">
+                        <form action="" method="post">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput-text" placeholder="Name">
+                                <label for="floatingInput-text">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3 ">
+                                <textarea class="form-control h-25" id="exampleFormControlTextarea1"
+                                    placeholder="Message"></textarea>
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            </div>
+                            <button type="submit" class="btn_INs">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="contact-map ">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.663785439558!2d10.754712674924338!3d34.839544975751636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d19db21e2b53%3A0x771c533873752407!2sHigher%20Institute%20of%20Computer%20Science%20and%20Multimedia%20of%20Sfax!5e0!3m2!1sen!2stn!4v1692862671525!5m2!1sen!2stn"
+                                style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="300"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class=" bg-black text-center" style=" padding: 20px 0;">
+        <div class="container_F">
+            <div class="row_F text-center">
+                <div class="footer-col my-3 ">
+                    <img src="MTC_ISIMS_logo_2.png" alt="Logo" class="w-50">
+                </div>
+                <div class="footer-col ">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/microsoft.tech.club.isims"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mtc.isims"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/fkRTyctf"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.linkedin.com/company/microsoft-tech-club-isims/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-muted mt-4">&copy; 2024 MTC_Isims. All rights reserved. </p>
+    </footer>
+
+    <div class="blur">
+    </div>
+
+
+    <!-- js Boostrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!-- js  -->
+    <script src="JS/index.js"></script>
+    <script src="JS/planning.js"></script>
+    <script src="JS/form.js"></script>
+    <script src="JS/committee.js"></script>
+
+
+
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!--------------------------------------------------------------------------------------------------------------->
+</body>
+
+</html>
